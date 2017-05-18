@@ -124,7 +124,7 @@ What does a coroutine look like?
 
     ```python3
 	@asyncio.coroutine
-	async def say(what, when):
+	def say(what, when):
         yield from asyncio.sleep(when)
         print(what)
     ```
